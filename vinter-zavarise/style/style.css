@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INDEX*/
+
+/*Clases*/
+
+.texto {
+    font-family: Heebo;
+    font-style: serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #404040;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.textoTiendavinter {
+    font-family: Heebo;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #404040;
+    margin-right: 150px;
+}
+.navegacion {
+    position: sticky;
+    top: 0;
+    background-color: #fffffff1;
+    padding-top: 20px;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.lista {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+.logo {
+    margin-left: 30%;
+    margin-right: 45px;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.buscador {
+    width: 50%;
+    background-image: url(../recursos/searchicon3.png);
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: hidden;
+    border-color: transparent;
+    padding: 10px 10px 10px 40px;
+    margin-left: 150px;
+    transition: all 0.7s ease-in-out;
+}
+
+.buscador:focus {
+    border-color: transparent;
+    background-color: rgba(255, 235, 185, 0.452)
+}
+
+.linea {
+    height: 1px;
+    border-width: 0;
+    color: #D1D1D1;
+    background-color: #D1D1D1;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.linea__2 {
+    width: 25%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.linea__3 {
+    width: 40%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+.cuadrado {
+    width: 500px;
+    height: 500px;
+    background-color: #F5F5F5;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+.textoCuadradoTitulo {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    padding: 40px 100px 10px 100px;
+}
+.textoCuadrado {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-size: 18px;
+    width: 425px;
+    padding: 0px 20px 10px 20px;
+}
+.boton {
+    font-family: Heebo;
+    color: #545454;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1.5px solid;
+    border-color: #666666;
+    background-color: transparent;
+    padding: 1px 2px 1px 2px;
+    display: flex;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.rectangulo {
+    width: 100%;
+    height: 180px;
+    background-color: #F5F5F5;
+    text-align: center;
+    display: grid;
+    align-content: stretch;
+}
+.textoRectanguloTitulo {
+    font-family: Frank Ruhl Libre;
+    font-size: 28px;
+    font-style: normal;
+    color: #252525;
+    display: grid;
+    align-content: center;
+}
+.textoRectangulo {
+    font-family: Frank Ruhl Libre;
+    font-size: 17px;
+    color: #545454;
+}
+.portada {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    margin-bottom: 60px;
+}
+.footer {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoFooter {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-size: 13px;
+    color: #545454;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    
+}
+.textoFooter--mail {
+    text-decoration: none;
+    color: #545454;
+    margin-left: 1px;
+}
+.textoFooter--insta {
+    text-decoration: none;
+    color: #545454;
+    margin-left: 1px;
+}
+.textoFooter--powered {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: unset;
+    font-size: 13px;
+    margin-top: 5px;
+    padding-top: 30px;
+    color: #D1D1D1;
+    text-align: center;
+}
+
+/*Elementos*/
+
+a {
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+a:hover {
+    color: #a6a6a6;
+}
+button:hover {
+    font-size: 12px;
+    background-color: rgba(255, 235, 185, 0.452)
+}
+#logo:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+/*TIENDA*/
+
+.textoTienda {
+    font-family: Heebo;
+    font-size: 16px;
+    color: #545454;
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+}
+.lineaTienda {
+    height: 1px;
+    border-width: 0;
+    color: #D1D1D1;
+    background-color: #D1D1D1;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.lineaTienda__2 {
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+.tienda {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.tiendaElementos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.tiendaLineaArticulo {
+    width: 320px;
+    height: 1px;
+    color: #D1D1D1;
+    margin: 15px 0px 5px 0px ;
+}
+
+/*ID´S*/
+
+#iamyourflexfather {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#h1 {
+    font-family: Heebo;
+    font-size: 28px;
+    color: #404040;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#imgTienda {
+    border-radius: 10px;
+}
+
+
+/*BLOG*/
+
+.blogFlex {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blogElementos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    transition: all 0.7s ease-in-out;
+
+}
+.blogTexto { 
+    text-decoration: none;
+    font-family: Frank Ruhl Libre;
+    font-size: 25px;
+    color: #545454;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.divBlog:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 235, 185, 0.452);
+    cursor: pointer;
+}
+
+
+/*Contacto*/
+
+.formContacto {
+    width: 30%;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.formTexto {
+    font-family: Frank Ruhl Libre;
+    font-size: 16px;
+    color: #545454;
+}
+
+.formTexto--padding {
+    padding-bottom: 5px;
+}
+
+input[type=text] {
+    width: 500px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: ridge;
+    transition: all 0.5s ease-in-out;
+}
+input[type=text]:focus {
+    background-color: rgba(255, 235, 185, 0.452);
+}
+
+input[type=email]{
+    width: 500px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: ridge;
+    transition: all 0.5s ease-in-out;
+}
+input[type=email]:focus {
+    border-color: transparent;
+    background-color: rgba(255, 235, 185, 0.452);
+}
+textarea {
+    width: 600px;
+    height: 200px;
+    resize: none;
+    padding: 5px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: ridge;
+}
+
+input[type=submit] {
+    font-family: Heebo;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border-style: ridge;
+    border-width: 1px;
+    transition: all 0.5s ease-in-out;
+}
+input[type=submit]:hover {
+    background-color: rgba(255, 235, 185, 0.452);
+    border-color: rgba(255, 235, 185, 0.452);
+}
+input::placeholder {
+    color: #D1D1D1;
+}
+textarea::placeholder {
+    color: #D1D1D1;
+}
+
+/*SOBRE NOSOTRXS*/
+
+.flexPadre {
+    display: flex;
+    flex-direction: row;
+}
+
+.rectanguloSobreNos {
+    width: 100%;
+    height: 500px;
+    background-color: #F5F5F5;
+}
+.rectanguloSobreNos__texto {
+    font-family: Heebo;
+    font-size: 30px;
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rectanguloSobreNos__texto--ancho {
+    width: 615px;
+    margin: auto;
+    display: flex;
+}
+.rectanguloSobreNos__lineasup {
+    height: 1px;
+    border-width: 0;
+    color: #D1D1D1;
+    background-color: #D1D1D1;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 13px;
+}
+.rectanguloSobreNos__lineainf {
+    height: 1px;
+    border-width: 0;
+    color: #D1D1D1;
+    background-color: #D1D1D1;
+    width: 100%;
+    margin-top: 13px;
+    margin-bottom: 50px;
+}
+.creditos {
+    font-family: Frank Ruhl Libre;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 70px 0px 35%;
+}
+.creditos--nombres {
+    color: #545454;
+}
+.creditos--actividad {
+    font-weight: bold;
+}
+.flexTextos {
+    display: flex;
+}
+.parrafos {
+    font-family: Frank Ruhl Libre;
+    font-size: 22px;
+    color: #545454;
+    width: 600px;
+    text-align: justify;
+    letter-spacing: 0.7px;
+}
+.parrafos--mod {
+    margin: 50px 0px 50px 140px;
+}
+.flexImgTextos {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 50px 38%;
+}
+.imgMargin {
+    margin: 50px 0px 50px 0px;
+}
